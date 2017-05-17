@@ -1,0 +1,109 @@
+@media only screen and (max-width:480px){
+*{
+  vertical-align: baseline;
+}
+.desktop{
+  display: none
+}
+
+header{
+  width: 100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+#body{
+  margin: 0;
+  padding:0;
+  border:0;
+}
+.mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#section1{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-content{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.supporting-content{
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+
+.media-container{
+  overflow: hidden;
+  height:180px;
+}
+.media-container img{
+  width: 100%;
+}
+
+#section1 .flex-content{
+  display: flex;
+  flex-flow: column;
+}
+
+.learn-container{
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  padding: 0;
+  margin: 32px 16px;
+  width:100%;
+}
+
+.learn-container h1, h2{
+  margin:0;
+  padding:0;
+}
+
+.learn-container h1{
+  font-size: 2rem;
+}
+
+.learn-container h2{
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+button{
+  padding:8px 0px;
+  width:95%;
+}
+
+.media-container .desktop{
+  display: none;
+}
+
+.info-supporting-content, .info-holder{
+  flex-flow: column;
+  width:100%;
+  padding:0;
+}
+
+info-supporting-content, .info-holder{
+  width:100%;
+}
+
+.info-holder .media-container{
+  width: 100%;
+}
+
+.mobileimg{
+  width: 100%;
+}

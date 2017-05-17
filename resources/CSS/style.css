@@ -1,0 +1,161 @@
+#body{
+  margin-left: 24px;
+}
+@media only screen and (min-width: 891px){
+.mobileimg{
+  display: none;
+}
+}
+/*Header Styles*/
+header{
+  height:64px;
+  width:100%;
+}
+.header{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerlogo{
+display: flex;
+}
+
+header nav ul{
+  display: flex;
+}
+
+.mobile{
+  display: none;
+}
+/*main-content, media-container and supporting-content basic styles*/
+.flex-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.main-content {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+}
+
+.media-container{
+  overflow: hidden;
+}
+
+.media-container img,.media-container video{
+  display: block;
+  width: 100%;
+}
+
+.supporting-content{
+width: 40%;}
+
+/*section 1 styles*/
+.learn-container{
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+}
+
+.learn-container h1{
+  font-size: 3rem;
+}
+
+.learn-container h2{
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+  font-weight: normal;
+}
+
+button{
+  padding:8px 0px;
+}
+
+/*section 2 styles*/
+#section2{
+  display:flex;
+}
+#section2 .main-content{
+  border-right: 1px solid rgb(245, 245, 245);
+}
+
+.flex-content .info-supporting-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.info-holder{
+  display: flex;
+  padding: 1rem;
+}
+
+.info-holder .media-container{
+  width:35%;
+}
+
+.info-picture-container img{
+  width: 100%;
+  display: block;
+}
+
+.info-text{
+  display: flex;
+  flex-direction: column;
+  width:65%;
+  padding: 0 1rem 0 1rem;
+  justify-content: center;
+}
+
+/*Section 3 styles*/
+ #Section3 h1{
+   text-align: center;
+ }
+
+.course-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:auto;
+}
+
+.course-container{
+  background-color: grey;
+  width: 30%;
+  margin: 1rem;
+}
+
+.course-image-container{
+  width:100%;
+  height:auto;
+}
+
+.course-image{
+  width:100%;
+  height:auto;
+}
+
+/*Section 4 styles*/
+#section4 h1{
+  text-align: center;
+}
+
+.thesis{
+  display: flex;
+}
+
+.thesis-info{
+  padding-top: 1rem;
+}
+
+/*Footer styles*/
+footer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
