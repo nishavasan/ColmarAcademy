@@ -66,35 +66,42 @@ header{
   flex-flow: wrap column;
   justify-content: center;
   padding: 0;
-  margin: 0 auto;
-  width:100%;
-}
-
-.learn-container h1, h2{
   margin:0;
-  padding:0;
+  width:100%;
 }
 
 .learn-container h1{
   font-size: 2rem;
   padding:0.3rem;
+  margin:32px 0 32px 16px;
 }
 
 .learn-container h2{
   font-size: 1.5rem;
   font-weight: normal;
   padding:0.3rem;
+  margin: 0 0 24px 16px;
 }
 
 button{
   padding:8px 0px;
-  width:95%;
-  margin:0.3rem;
+  width:80%;
+  margin:0 3rem 32px;
 }
 
+button:active{
+  text-decoration: underline;
+}
+
+/*Section2*/
+
+.flex-content .info-supporting-content {
+  padding:0;
+}
 .media-container .desktop{
   display: none;
 }
+
 
 .info-supporting-content, .info-holder{
   flex-flow: column;
@@ -102,7 +109,7 @@ button{
   padding:0;
 }
 
-info-supporting-content, .info-holder{
+.info-supporting-content, .info-holder{
   width:100%;
 }
 
@@ -110,35 +117,76 @@ info-supporting-content, .info-holder{
   width: 100%;
 }
 
-.mobileimg{
-  width: 100%;
+#mobileimg img{
+  padding:0 16px;
+  margin: 0 auto;
+  width: 92%;
+}
+.info-holder{
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
 .info-text p{
   font-weight: normal;
 }
 
+.info-text{
+  margin: 0.5rem 1.3rem;
+  padding-bottom:8px;
+}
+
+/*Section3*/
+.courses{
+  padding-bottom: 32px;
+  border-bottom: solid 1px #afafaf;
+}
+
+.courses h1{
+  margin:0;
+  padding-top:32px;
+  padding-bottom: 16px;
+}
+.mobile-container{
+  margin: 32px 0;
+}
 .mobile-container ul{
   list-style: none;
   padding: 0 24px;
 }
 .mobile-container li{
-  background-color: #333;
-  margin-bottom:0.5rem;
-  padding: 0.3rem;
+  background-color: #e8815c;
+  margin-bottom:8px;
+  padding: 16px;
 }
 
+.mobile-container li:active{
+  text-decoration: underline;
+}
 .mobile-container a{
   text-decoration: none;
   color: white;
+  font-size: 1.15em;
 }
 
+/*Section4*/
+#section4 h1{
+  padding: 32px 0;
+  margin: 0;
+}
 .media-container video{
   width:100%;
   height: auto;
   overflow: visible;
 }
 
+.thesis{
+  padding:0;
+}
+
+#section4 .media-container{
+  padding-bottom: 24px;
+}
 footer{
   margin: 16px 0;
 }
