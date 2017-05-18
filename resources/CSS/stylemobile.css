@@ -32,6 +32,9 @@ header{
   width: 100%;
 }
 
+.flex-content{
+  padding: 0;
+}
 .main-content{
   width: 100%;
   padding: 0;
@@ -45,7 +48,7 @@ header{
   padding: 0;
 }
 
-.media-container{
+.media-container .banner{
   overflow: hidden;
   height:180px;
 }
@@ -63,7 +66,7 @@ header{
   flex-flow: wrap column;
   justify-content: center;
   padding: 0;
-  margin: 32px 16px;
+  margin: 0 auto;
   width:100%;
 }
 
@@ -74,16 +77,19 @@ header{
 
 .learn-container h1{
   font-size: 2rem;
+  padding:0.3rem;
 }
 
 .learn-container h2{
   font-size: 1.5rem;
   font-weight: normal;
+  padding:0.3rem;
 }
 
 button{
   padding:8px 0px;
   width:95%;
+  margin:0.3rem;
 }
 
 .media-container .desktop{
@@ -105,5 +111,38 @@ info-supporting-content, .info-holder{
 }
 
 .mobileimg{
+  width: 100%;
+}
+
+.info-text p{
+  font-weight: normal;
+}
+
+.mobile-container ul{
+  list-style: none;
+  padding: 0 24px;
+}
+.mobile-container li{
+  background-color: #333;
+  margin-bottom:0.5rem;
+  padding: 0.3rem;
+}
+
+.mobile-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.media-container video{
+  width:100%;
+  height: auto;
+  overflow: visible;
+}
+
+footer{
+  margin: 16px 0;
+}
+footer p{
+  text-align: center;
   width: 100%;
 }
