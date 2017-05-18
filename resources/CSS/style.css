@@ -1,11 +1,14 @@
-#body{
-  margin-left: 24px;
-}
-@media only screen and (min-width: 891px){
-.mobileimg{
+@media only screen and (min-width: 481px){
+#mobileimg, .mobile-container{
   display: none;
 }
 }
+
+#body{
+  margin:0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 /*Header Styles*/
 header{
   height:64px;
@@ -16,12 +19,31 @@ header{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 53%, rgba(246,246,246,1) 56%, rgba(246,246,246,1) 60%, rgba(246,246,246,1) 64%, rgba(246,246,246,1) 69%, rgba(246,246,246,1) 73%, rgba(246,246,246,1) 76%, rgba(246,246,246,1) 79%, rgba(246,246,246,1) 82%, rgba(246,246,246,1) 86%, rgba(246,246,246,1) 90%, rgba(135,130,135,1) 100%);
 }
 
+.header p{
+  font-size: 1.5em;
+}
+
+.header nav{
+  font-size: 1.3em;
+}
+.header a{
+  text-decoration: none;
+  color:black;
+  margin: 0.3rem 1rem 0.3rem 0.3rem;
+}
+.header a:hover{
+  text-decoration: underline;
+}
 .headerlogo{
 display: flex;
+align-items: center;
 }
-
+.headerlogo img{
+  height: 4rem;
+}
 header nav ul{
   display: flex;
 }
@@ -33,7 +55,8 @@ header nav ul{
 .flex-content {
   display: flex;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  flex-basis: 0.5;
 }
 
 .main-content {
@@ -54,10 +77,18 @@ header nav ul{
 width: 40%;}
 
 /*section 1 styles*/
+#section1{
+  background: #77A1D3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .learn-container{
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
+  margin-top:4rem;
+  color: white;
 }
 
 .learn-container h1{
@@ -71,15 +102,33 @@ width: 40%;}
 }
 
 button{
-  padding:8px 0px;
+  padding:10px;
+  width: 80%;
+  background: rgba(240,124,104,1);
+  font-size: 1.3em;
+  color: white;
+  border: none;
 }
 
+button:hover{
+  -webkit-box-shadow: 6px 18px 38px -8px rgba(128,118,128,1);
+-moz-box-shadow: 6px 18px 38px -8px rgba(128,118,128,1);
+box-shadow: 6px 18px 38px -8px rgba(128,118,128,1);
+}
 /*section 2 styles*/
 #section2{
   display:flex;
 }
 #section2 .main-content{
-  border-right: 1px solid rgb(245, 245, 245);
+  border-right: 1px solid #afafaf;
+}
+
+#section2 .main-content h1{
+  font-weight: bold;
+}
+
+#section2 p{
+font-size: 1.2em;
 }
 
 .flex-content .info-supporting-content {
@@ -107,25 +156,38 @@ button{
   flex-direction: column;
   width:65%;
   padding: 0 1rem 0 1rem;
-  justify-content: center;
+  margin: 0;
 }
 
+.info-text h3, p{
+  margin:0.5rem 0rem;
+}
 /*Section 3 styles*/
  #Section3 h1{
    text-align: center;
+   font-size: 2em;
+   margin:0;
+   padding: 1rem;
+   color:white;
  }
+
+#Section3{
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(113,179,237,1) 100%);
+}
 
 .course-grid{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width:auto;
+  padding:0 1.5rem;
 }
 
 .course-container{
-  background-color: grey;
-  width: 30%;
+  background-color: white;
+  width: 25%;
   margin: 1rem;
+
 }
 
 .course-image-container{
@@ -138,19 +200,53 @@ button{
   height:auto;
 }
 
+.course-text{
+  text-align: center;
+  padding:1rem;
+}
+
+.course-container:hover{
+  background-color: rgba(240,124,104,1);
+  color:white;
+}
+
+
 /*Section 4 styles*/
 #section4 h1{
   text-align: center;
+  font-size: 2em;
 }
 
+#section4 p{
+  font-size: 1.2em;
+}
 .thesis{
   display: flex;
+  border-bottom: 1px solid #afafaf;
+  padding-left: 1.5rem;
 }
 
 .thesis-info{
   padding-top: 1rem;
 }
 
+
+.info-text h3{
+  font-size: 1.5em;
+}
+
+#section4 h4{
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.yellow:hover{
+  background: #ffec72;
+}
+
+.pink:hover{
+  background:#ff9ec9;
+}
 /*Footer styles*/
 footer{
   display:flex;
@@ -158,4 +254,14 @@ footer{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin-top:0.3rem;
+}
+
+.footer-links a{
+  text-decoration: none;
+  margin: 0.3rem 2rem 0.3rem 0.3rem;
+  color:black;
+
 }
