@@ -4,11 +4,17 @@
 }
 }
 
-#body{
-  margin:0px;
+*{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+  margin: 0;
+}
+
+#content{
+padding-top: 64px;
+}
 /*Header Styles*/
 header{
   height:64px;
@@ -20,6 +26,8 @@ header{
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 53%, rgba(246,246,246,1) 56%, rgba(246,246,246,1) 60%, rgba(246,246,246,1) 64%, rgba(246,246,246,1) 69%, rgba(246,246,246,1) 73%, rgba(246,246,246,1) 76%, rgba(246,246,246,1) 79%, rgba(246,246,246,1) 82%, rgba(246,246,246,1) 86%, rgba(246,246,246,1) 90%, rgba(135,130,135,1) 100%);
+  margin:0;
+  position:fixed;
 }
 
 .header p{
@@ -252,7 +260,6 @@ font-size: 1.2em;
 .pink:hover{
   background:#ff9ec9;
 }
-
 /*Footer styles*/
 footer{
   display:flex;
